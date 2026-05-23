@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gadschain"
+version = "0.1.0"
+description = "Google Ads MCP server — clean, agent-friendly tools over the Google Ads API."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+keywords = ["mcp", "google-ads", "ads", "marketing", "ai-agents"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "fastmcp>=0.1.0",
+    "google-ads>=31.0.0,<32.0.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[project.scripts]
+gadschain = "gadschain.server:main"
+
+[project.urls]
+Homepage = "https://github.com/SnipMCP/gadschain"
+Repository = "https://github.com/SnipMCP/gadschain"
+Issues = "https://github.com/SnipMCP/gadschain/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  gadschain:
+    build: .
+    env_file: .env
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
