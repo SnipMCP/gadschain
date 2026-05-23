@@ -1,8 +1,12 @@
+<!-- mcp-name: io.github.SnipMCP/gadschain -->
+
 # GadsChain
 
 The AI layer between your Google Ads account and your marketing decisions.
 
 **Battle-tested.** Six tools cover the daily-ops loop — campaign listing, search-term review, budget tuning, pause/enable, and negative-keyword grooming. All responses are strict Pydantic models. No raw protobuf reaches the agent.
+
+![GadsChain Demo](demo/gadschain_demo.gif)
 
 ## ☁️ Moving to production?
 
