@@ -5,11 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "gadschain"
 version = "0.1.0"
-description = "Google Ads MCP server — clean, agent-friendly tools over the Google Ads API."
+description = "Google Ads MCP server. Read campaigns, manage budgets, pause/enable, add negative keywords."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.11"
-keywords = ["mcp", "google-ads", "ads", "marketing", "ai-agents"]
+keywords = ["google-ads", "marketing", "advertising", "mcp", "snipmcp"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
